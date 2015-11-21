@@ -21,7 +21,6 @@ var (
 	}
 )
 
-// rm function 
 func rm(files []string, do_recursive bool, verbose bool) error {
 	f := os.Remove
 	if do_recursive {
@@ -29,7 +28,7 @@ func rm(files []string, do_recursive bool, verbose bool) error {
 	}
 	working_path, _ := os.Getwd()
 
-	// looping for removing files and folders
+	// loop for remove files and folders
 	for _, file := range(files) {
 		err := f(file)
 		if err != nil {
