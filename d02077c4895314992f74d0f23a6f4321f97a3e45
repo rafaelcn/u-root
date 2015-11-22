@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5ac4a560_1874699b",
+        "filename": "src/cmds/rm/rm.go",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1005283
+      },
+      "writtenOn": "2015-11-22T20:28:08Z",
+      "side": 1,
+      "message": "you still need to remove this test .. flag.Parse will remove those args.",
+      "revId": "d02077c4895314992f74d0f23a6f4321f97a3e45",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
