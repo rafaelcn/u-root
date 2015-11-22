@@ -43,9 +43,9 @@ func main() {
 	if len(os.Args) == 1 {
 		io.Copy(os.Stdout, os.Stdin)
 	} else if *u_flag == true {
-			// treat -u flag!
-			cat()
-	} else {
-			cat()
+		// treat -u flag!
+		cat()
 	}
+
+	cat()
 }
