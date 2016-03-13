@@ -9,34 +9,29 @@ On a Debian, Ubuntu or other .deb system, you should be able to get going with:
 
 	sudo aptitude install git golang build-essential
 
+U-root requires at least go1.5 and the go source tree needs to be present.
 
-U-root requires go1.5 and the go source tree needs to be present.
 
-
-2. Gerrit
+2. Github
 ======
 
-We use gerrithub.io for code-review. If you want to submit changes, go to
+We use Github! And we are located at:
 
-	https://review.gerrithub.io/#/admin/projects/u-root/u-root
+	https://github.com/u-root/u-root
 
-and check out the repository from gerrithub rather than github. The clone
-command will probably look something like this:
+Clone the repository of u-root and fell free to help us, just be aware of what we are doing and what are our next goals.
 
-	git clone ssh://USERNAME@review.gerrithub.io:29418/u-root/u-root
-
-you'll need to run a few commands inside the top-level directory to get set
-up for code-review:
-
-	cd u-root
-	curl -Lo .git/hooks/commit-msg http://review.gerrithub.io/tools/hooks/commit-msg
-	chmod u+x .git/hooks/commit-msg
-	git config remote.origin.push HEAD:refs/for/master
-	git config remote.origin.receivepack "git receive-pack --reviewer rminnich --reviewer rhiguita"
-
-You're now all set, you can build the whole thing just by running the README file, or you could just type:
-
+To run u-root you will just need to either build* the `ramfs.go` or run it with this line below.
+ 
 	go run scripts/ramfs.go -test
+
+
+
+\* to build the `ramfs.go` use:
+
+	go build scripts/ramfs.go
+
+
 
 
 	
